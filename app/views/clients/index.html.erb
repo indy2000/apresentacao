@@ -1,1 +1,27 @@
-<h1>Ola mundo testando velocidade</h1>
+<%= form_for @cliente do |f|%>
+		<div class="form-group">
+			<%=f.check_box :capsula, class: "checkbox-inline"%>
+			<%=f.label :capsula %>
+
+			<%=f.check_box :creme, class: "checkbox-inline"%>
+			<%=f.label :creme %>
+
+			<%=f.check_box :sache, class: "checkbox-inline"%>
+			<%=f.label :sache %>
+		</div>
+
+		<div class="form-group">
+			<%=f.check_box :shampoo, class: "checkbox-inline"%>
+			<%=f.label :shampoo %>
+
+			<%=f.check_box :floral, class: "checkbox-inline"%>
+			<%=f.label :floral %>
+
+			<%=f.check_box :homeopatia, class: "checkbox-inline"%>
+			<%=f.label :homeopatia %>
+		</div>
+
+		<%= f.submit :Enviar, class: "btn btn-primary" %>
+<%end%>
+
+
