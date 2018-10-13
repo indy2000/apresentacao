@@ -3,10 +3,10 @@ class Client < ApplicationRecord
 	def escolhaVideo(capsula,creme,sache,shampoo,floral,h)
 		videos_escolhidos = {} 
 		if capsula == true
-			videos_escolhidos['capsula'] = "video1"
+			videos_escolhidos['capsula'] = "./videos/video_01.mp4"
 		end
 		if creme == true
-			videos_escolhidos['creme'] = "video2"
+			videos_escolhidos['creme'] = "./videos/video_02.mp4"
 		end
 		if sache == true
 			videos_escolhidos['sache'] = "video3"

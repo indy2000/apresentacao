@@ -1,3 +1,16 @@
-<h1>Ola mundo</h1>
-<h1><%=$clientes.nome%></h1>
-<h1><%=$videos_escolhidos%></h1>
+<h1>Ola <%=$clientes.nome%> e um prazer ter você conosco,<br> que bom que voce ira fazer um medicamento conosco.</h1>
+<h2>vou lhe amostra neste breve video como e feito de forma individualizada o seu medicamento!</h2>
+<h1 align="center"><b>A VIDA E A NOSSA MAIOR INSPIRAÇÃO<b/></h1> 
+<%=$videos_escolhidos.each_value do |d|%>
+ 	<div align="center">
+ 		
+ 			<video autoplay controls>
+  				<source src="<%=d%>" type="video/mp4">
+  				Your browser does not support HTML5 video.
+			</video>
+		
+	</div>
+<%end%>
+
+
+
