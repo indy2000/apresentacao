@@ -25,6 +25,15 @@ class Client < ApplicationRecord
 
 	end
 
+	def formatText(chave)
+		texto = ''
+		chave.each do |key,val|
+			texto << key.to_s + "&".encode('UTF-8')
+		end
+		return texto
+	end	
 	
 
 end
+
+
